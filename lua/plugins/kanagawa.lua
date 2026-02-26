@@ -13,7 +13,7 @@ return {
         keywordStyle = { italic = true },
         statementStyle = { bold = true },
         typeStyle = {},
-        transparent = false,        -- Mettez à 'true' si vous voulez le fond de votre terminal
+        transparent = true,        -- Mettez à 'true' si vous voulez le fond de votre terminal
         dimInactive = false,        -- Assombrit les fenêtres non focalisées
         terminalColors = true,      -- Définit les couleurs du terminal interne
         colors = {
@@ -28,11 +28,14 @@ return {
         overrides = function(colors)
           return {}
         end,
-        theme = "lotus",              -- Options: "wave", "dragon", "lotus"
+        theme = "dragon",              -- Options: "wave", "dragon", "lotus"
       })
-
-      -- On applique le thème
-      vim.cmd("colorscheme kanagawa")
     end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "kanagawa"
+     },
   },
 }

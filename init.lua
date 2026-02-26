@@ -1,6 +1,6 @@
 -- 2. Config spécifique pour C et C++ : Vraies Tabulations
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "c", "cpp" },
+  pattern = { "c", "cpp" , "make"},
   callback = function()
     vim.opt_local.expandtab = false -- Désactive la conversion en espaces
     vim.opt_local.tabstop = 8      -- Souvent 8 en C, mais tu peux mettre 4
