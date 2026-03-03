@@ -13,8 +13,11 @@ return {
         magenta  = "#bb9af7",
         blue     = "#7aa2f7",
         red      = "#f7768e",
-        grey     = "#3b4261",
+        grey     = "#808080",
         white     = "#ffffff",
+        slate_grey = "#2c323c",
+        deep_plum = "#2d2a2e",
+        mid_blue = "#1e1e2e",
       }
 
       -- 2. On crée le thème personnalisé
