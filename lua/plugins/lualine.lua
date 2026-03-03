@@ -19,24 +19,24 @@ return {
       -- 2. On crée le thème personnalisé
       local my_custom_theme = {
         normal = {
-          a = { fg = colors.bg, bg = colors.orange, gui = "bold" }, -- Mode Normal
+          a = { fg = colors.bg, bg = colors.orange, gui = "NONE" }, -- Mode Normal
           b = { fg = colors.bg, bg = colors.cyan },
           c = { fg = colors.bg, bg = colors.red },               -- LE MILIEU (Normal)
         },
         insert = {
-          a = { fg = colors.bg, bg = colors.red, gui = "bold" }, -- Mode Insertion
+          a = { fg = colors.bg, bg = colors.red, gui = "NONE" }, -- Mode Insertion
           c = { fg = colors.fg, bg = colors.bg },
         },
         visual = {
-          a = { fg = colors.bg, bg = colors.magenta, gui = "bold" }, -- Mode Visuel
+          a = { fg = colors.bg, bg = colors.magenta, gui = "NONE" }, -- Mode Visuel
           c = { fg = colors.fg, bg = colors.bg },
         },
         replace = {
-          a = { fg = colors.bg, bg = colors.yellow, gui = "bold" },    -- Mode Remplacement
+          a = { fg = colors.bg, bg = colors.yellow, gui = "NONE" },    -- Mode Remplacement
           c = { fg = colors.fg, bg = colors.bg },
         },
         command = {
-          a = { fg = colors.bg, bg = colors.orange, gui = "bold" }, -- Mode Commande
+          a = { fg = colors.bg, bg = colors.orange, gui = "NONE" }, -- Mode Commande
           c = { fg = colors.fg, bg = colors.bg },
         },
       }
