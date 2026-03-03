@@ -37,8 +37,8 @@ return {
           c = { fg = colors.yellow, bg = colors.bg },
         },
         command = {
-          a = { fg = colors.bg, bg = colors.orange, gui = "NONE" }, -- Mode Commande
-          c = { fg = colors.orange, bg = colors.bg },
+          a = { fg = colors.bg, bg = colors.red, gui = "NONE" }, -- Mode Commande
+          c = { fg = colors.red, bg = colors.bg },
         },
       }
 
