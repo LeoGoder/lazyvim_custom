@@ -7,3 +7,5 @@ vim.opt.laststatus = 2
 
 -- Pour afficher le mode (-- INSERT --, -- VISUAL --) en bas à gauche
 vim.opt.showmode = true
+
+vim.opt.guicursor = "n-v-c-i-ci-ve:block"
