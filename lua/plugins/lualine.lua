@@ -32,7 +32,8 @@ return {
         fire = " ",
         apple = " ",
         linux = " ",
-        windows = " "
+        windows = " ",
+        space_invader = "󰯉 "
       }
 
       -- 2. On crée le thème personnalisé
@@ -69,7 +70,7 @@ return {
           globalstatus = true,
         },
         sections = {
-          lualine_a = { { "mode", fmt = function(str) return icons.nvim_style2 .. (str:sub(1, 1) == "V" and "VISUAL" or str) end } },
+          lualine_a = { { "mode", fmt = function(str) return icons.space_invader .. (str:sub(1, 1) == "V" and "VISUAL" or str) end } },
           lualine_b = { "branch" },
           lualine_c = { "filetype", "filename" }, -- C'est ici le milieu
           lualine_x = { "encoding", "fileformat" },
