@@ -20,6 +20,21 @@ return {
         mid_blue = "#1e1e2e",
       }
 
+      local icons = {
+        nvim = " ",
+        nvim_style2 = " ",
+        vim = " ",
+        vim_style2 = " ",
+        chevron = " ",
+        terminal_cursor = "󰅩 ",
+        rocket = "󱓞 ",
+        gros_crane = "󰚌 ",
+        fire = " ",
+        apple = " ",
+        linux = " ",
+        windows = " "
+      }
+
       -- 2. On crée le thème personnalisé
       local my_custom_theme = {
         normal = {
@@ -54,7 +69,7 @@ return {
           globalstatus = true,
         },
         sections = {
-          lualine_a = { { "mode", format = function(str) return str:sub(1, 1) == "V" and "VISUAL" or str end } },
+          lualine_a = { { "mode", fmt = function(str) return icons.nvim_style2 .. (str:sub(1, 1) == "V" and "VISUAL" or str) end } },
           lualine_b = { "branch" },
           lualine_c = { "filetype", "filename" }, -- C'est ici le milieu
           lualine_x = { "encoding", "fileformat" },
