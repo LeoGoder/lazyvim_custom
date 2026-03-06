@@ -33,7 +33,8 @@ return {
         apple = " ",
         linux = " ",
         windows = " ",
-        space_invader = "󰯉 "
+        space_invader = "󰯉 ",
+        playstation = "󰐔 "
       }
 
       -- 2. On crée le thème personnalisé
